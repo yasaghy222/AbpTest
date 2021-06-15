@@ -22,15 +22,9 @@ namespace ABPTest.Authors
         public string Family { get; set; }
 
         /// <summary>
-        /// نام کامل
-        /// </summary>
-        [Display(ShortName = "نام کامل")]
-        public string FullName => $"{Name} {Family}";
-
-        /// <summary>
         /// تاریخ تولد
         /// </summary>
         [Display(ShortName = "تاریخ تولد")]
-        public DateTime BirthDate { get; set; }
+        public DateTime BirthDate { get; set; } = DateTime.MinValue;
     }
 }
